@@ -6,8 +6,8 @@ import Loader from './Loader';
 const Placeholder = ({ delayMs, fallback, children }) => {
   return (
     <Timeout ms={delayMs}>
-      {didExpire => {
-        return didExpire ? fallback : children;
+      {didTimeout => {
+        return didTimeout ? fallback : children;
       }}
     </Timeout>
   );
