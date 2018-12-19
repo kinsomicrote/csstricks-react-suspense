@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import loadProfiles from './fetcher'
-import { withCache } from './withCache';
+import withCache from './withCache'
+
 
 const cardWidth = {
     width: '20rem'
